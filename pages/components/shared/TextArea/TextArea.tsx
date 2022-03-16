@@ -1,6 +1,6 @@
 export default function TextArea() {
   return (
-    <div className="mb-3 xl:w-96 mt-10">
+    <div className="mb-3 xl:w-[30rem] mt-10">
         <textarea
         className="
             form-control

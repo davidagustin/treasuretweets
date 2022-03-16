@@ -4,7 +4,7 @@ import TextArea from '../shared/TextArea'
 
 export default function Message() {
   return (
-    <div className="mb-3 xl:w-96 mt-10">
+    <div className="mb-3 mt-10">
         <div className="flex">
             <div className="mt-10">
                 <ProfileIcon image={'/favicon.webp'}/>
