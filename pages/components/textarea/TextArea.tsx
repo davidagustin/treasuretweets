@@ -1,6 +1,8 @@
+import Button from '../Button'
+
 export default function TextArea() {
   return (
-    <div className="mb-3 xl:w-96">
+    <div className="mb-3 xl:w-96 mt-10">
         <textarea
         className="
             form-control
@@ -12,17 +14,19 @@ export default function TextArea() {
             font-normal
             text-white-700
             bg-black bg-clip-padding
-            border border-solid border-gray-300
             rounded
             transition
             ease-in-out
             m-0
-            max-h-64
+            max-h-48
             focus:text-white-700 focus:bg-black focus:border-blue-600 focus:outline-none
         "
         rows={3}
         placeholder="What's happening?"
         ></textarea>
+        <div className="flex justify-end">
+            <Button buttonText={'Tweet'}/>
+        </div>
     </div>
   )
 }
