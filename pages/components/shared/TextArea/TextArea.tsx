@@ -1,5 +1,3 @@
-import Button from '../Button'
-
 export default function TextArea() {
   return (
     <div className="mb-3 xl:w-96 mt-10">
@@ -24,9 +22,6 @@ export default function TextArea() {
         rows={3}
         placeholder="What's happening?"
         ></textarea>
-        <div className="flex justify-end">
-            <Button buttonText={'Tweet'}/>
-        </div>
     </div>
   )
 }
