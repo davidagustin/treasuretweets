@@ -1,22 +1,32 @@
+import { useState } from "react";
+
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import MessageInput from './components/MessageInput';
 import MessageCard from './components/shared/MessageCard';
-import React, { useState } from "react";
-import { SyntheticEventData } from 'react-dom/test-utils';
 
 export default function Home() {
   const defaultList = [
-    { message: "ItemOne" },
-    { message: "ItemTwo" },
-    { message: "ItemThree" }
+    { message: "TreasureDAO rocks!!!!" },
+    { message: "Made by CryptoMan" },
+    { message: "EEEEEEEE!!!!" }
   ];
 
   const [list, updateList] = useState(defaultList);
+  const [textArea, updateTextArea] = useState('');
 
-  const handleDelete= (index: number): void => {
+  const handleAdd = (message) => {
+    updateList([{ message }, ...list])
+  }
+
+  const handleDelete = (index: number): void => {
     updateList(list.filter((_, listIndex) => listIndex !== index))
-   };
+  };
+
+  const handleClick = (event) => {
+    handleAdd(textArea);
+    updateTextArea('');
+  };
 
   return (
     <div className={styles.container}>
@@ -26,7 +36,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.webp" />
       </Head>
       <main className={styles.main}>
-        <MessageInput />
+        <MessageInput textArea={textArea} updateTextArea={updateTextArea} handleClick={handleClick}/>
         <div>
           {list.map((item, i) => {
             return (

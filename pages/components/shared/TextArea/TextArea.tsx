@@ -1,7 +1,9 @@
-export default function TextArea() {
+export default function TextArea({ updateTextArea, textArea }) {
   return (
     <div className="mb-3 xl:w-[30rem] mt-10">
         <textarea
+        value={textArea}
+        onChange={(event) => updateTextArea(event.target.value)}
         className="
             form-control
             block
