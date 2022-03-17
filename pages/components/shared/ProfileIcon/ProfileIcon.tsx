@@ -1,6 +1,10 @@
 import Image from 'next/image';
 
-export default function ProfileIcon({ image }) {
+interface ProfileIcon {
+  image: string;
+}
+
+export default function ProfileIcon({ image }: ProfileIcon) {
     return (
       <div>
         <Image src={image} alt="profile icon" width={50} height={50}/>

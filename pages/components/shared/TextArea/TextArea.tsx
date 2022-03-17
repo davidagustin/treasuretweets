@@ -1,4 +1,9 @@
-export default function TextArea({ updateTextArea, textArea }) {
+interface TextArea {
+  updateTextArea: (Event) => void;
+  textArea: string;
+}
+
+export default function TextArea({ updateTextArea, textArea }: TextArea) {
   return (
     <div className="mb-3 xl:w-[30rem] mt-10">
         <textarea

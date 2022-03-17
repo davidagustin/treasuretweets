@@ -1,7 +1,13 @@
 import ProfileIcon from "../ProfileIcon"
 import Button from "../Button"
 
-export default function MessageCard({ message, handleDelete, index }) {
+interface MessageCard {
+  message: string;
+  handleDelete: (any) => void;
+  index: number;
+}
+
+export default function MessageCard({ message, handleDelete, index }: MessageCard) {
   return (
     <div className="border-[2px] border-gray-800 border-solid w-[560px] p-[12px] flex flex-row">
       <div>
