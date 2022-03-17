@@ -5,9 +5,10 @@ import TextArea from '../shared/TextArea'
 interface MessageInput {
   textArea: string;
   updateTextArea: (Event) => void;
+  handleClick: any;
 }
 
-export default function MessageInput({ textArea, updateTextArea, handleClick}) {
+export default function MessageInput({ textArea, updateTextArea, handleClick}: MessageInput) {
   
   return (
     <div className="mb-3 mt-10">
