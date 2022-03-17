@@ -1,7 +1,8 @@
 import { useState } from "react";
-
 import Head from 'next/head';
+
 import styles from '../styles/Home.module.css';
+
 import MessageInput from './components/MessageInput';
 import MessageCard from './components/shared/MessageCard';
 
