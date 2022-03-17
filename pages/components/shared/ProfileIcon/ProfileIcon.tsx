@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 interface ProfileIcon {
   image: string;
-}
+};
 
 export default function ProfileIcon({ image }: ProfileIcon) {
     return (

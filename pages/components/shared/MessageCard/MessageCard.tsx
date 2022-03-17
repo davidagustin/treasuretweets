@@ -1,11 +1,11 @@
-import ProfileIcon from "../ProfileIcon"
-import Button from "../Button"
+import ProfileIcon from "../ProfileIcon";
+import Button from "../Button";
 
 interface MessageCard {
   message: string;
   handleDelete: (any) => void;
   index: number;
-}
+};
 
 export default function MessageCard({ message, handleDelete, index }: MessageCard) {
   return (

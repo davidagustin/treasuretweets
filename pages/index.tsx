@@ -16,15 +16,15 @@ export default function Home() {
   const [list, updateList] = useState(defaultList);
   const [textArea, updateTextArea] = useState('');
 
-  const handleAdd = (message) => {
+  const handleAdd = (message): void => {
     updateList([{ message }, ...list])
-  }
+  };
 
   const handleDelete = (index: number): void => {
     updateList(list.filter((_, listIndex) => listIndex !== index))
   };
 
-  const handleClick = () => {
+  const handleClick = (): void => {
     handleAdd(textArea);
     updateTextArea('');
   };

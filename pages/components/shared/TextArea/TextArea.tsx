@@ -1,7 +1,7 @@
 interface TextArea {
   updateTextArea: (Event) => void;
   textArea: string;
-}
+};
 
 export default function TextArea({ updateTextArea, textArea }: TextArea) {
   return (

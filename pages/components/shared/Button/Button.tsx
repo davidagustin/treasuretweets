@@ -1,7 +1,7 @@
 interface Button {
   buttonText: string;
   handleClick: any;
-}
+};
 
 export default function Button({ buttonText, handleClick }: Button) {
     return (

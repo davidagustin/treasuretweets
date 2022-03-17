@@ -1,12 +1,12 @@
-import Button from '../shared/Button'
-import ProfileIcon from '../shared/ProfileIcon'
-import TextArea from '../shared/TextArea'
+import Button from '../shared/Button';
+import ProfileIcon from '../shared/ProfileIcon';
+import TextArea from '../shared/TextArea';
 
 interface MessageInput {
   textArea: string;
   updateTextArea: (Event) => void;
   handleClick: any;
-}
+};
 
 export default function MessageInput({ textArea, updateTextArea, handleClick}: MessageInput) {
   
