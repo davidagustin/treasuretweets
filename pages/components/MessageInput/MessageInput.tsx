@@ -2,6 +2,11 @@ import Button from '../shared/Button'
 import ProfileIcon from '../shared/ProfileIcon'
 import TextArea from '../shared/TextArea'
 
+interface MessageInput {
+  textArea: string;
+  updateTextArea: (Event) => void;
+}
+
 export default function MessageInput({ textArea, updateTextArea, handleClick}) {
   
   return (
