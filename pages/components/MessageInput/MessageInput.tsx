@@ -2,7 +2,7 @@ import Button from '../shared/Button'
 import ProfileIcon from '../shared/ProfileIcon'
 import TextArea from '../shared/TextArea'
 
-export default function Message() {
+export default function MessageInput() {
   return (
     <div className="mb-3 mt-10">
         <div className="flex">
