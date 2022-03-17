@@ -23,7 +23,7 @@ export default function Home() {
     updateList(list.filter((_, listIndex) => listIndex !== index))
   };
 
-  const handleClick = (event) => {
+  const handleClick = () => {
     handleAdd(textArea);
     updateTextArea('');
   };

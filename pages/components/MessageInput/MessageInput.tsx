@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import Button from '../shared/Button'
 import ProfileIcon from '../shared/ProfileIcon'
 import TextArea from '../shared/TextArea'
