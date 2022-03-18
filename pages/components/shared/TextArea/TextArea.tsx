@@ -7,6 +7,7 @@ export default function TextArea({ updateTextArea, textArea }: TextArea) {
   return (
     <div className="mb-3 xl:w-[30rem] mt-10">
         <textarea
+        aria-label="text-area"
         value={textArea}
         onChange={(event) => updateTextArea(event.target.value)}
         className="

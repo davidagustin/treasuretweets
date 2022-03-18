@@ -9,7 +9,7 @@ interface MessageCard {
 
 export default function MessageCard({ message, handleDelete, index }: MessageCard) {
   return (
-    <div className="border-[2px] border-gray-800 border-solid w-[560px] p-[12px] flex flex-row">
+    <div className="border-[2px] border-gray-800 border-solid w-[560px] p-[12px] flex flex-row" aria-label='message-card'>
       <div>
           <ProfileIcon image={'/favicon.webp'}/>
       </div>
@@ -17,7 +17,7 @@ export default function MessageCard({ message, handleDelete, index }: MessageCar
         <div className="font-bold">
           CryptoMan | Treasure
         </div>        
-        <div>
+        <div aria-label='message-card-output'>
           { message }
         </div>
       </div>
